@@ -1,0 +1,15 @@
+{
+  "id": "71a9517d-443c-46c4-8734-76eade09a1b7",
+  "name": "destination",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "addressDest",
+      "synonyms": [
+        "address"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": false
+}

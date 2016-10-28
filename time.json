@@ -1,0 +1,15 @@
+{
+  "id": "fe56f5ad-be09-450a-a30e-0eb71a92d865",
+  "name": "time",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "time",
+      "synonyms": [
+        "time"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": false
+}

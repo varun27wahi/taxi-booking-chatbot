@@ -1,0 +1,191 @@
+{
+  "id": "1efe261d-b821-442d-99fb-6b61f3a39925",
+  "name": "book-cab",
+  "auto": true,
+  "contexts": [],
+  "userSays": [
+    {
+      "id": "25c93ca5-aa2a-4dd9-9eed-11b4cb48b204",
+      "data": [
+        {
+          "text": "taxi to "
+        },
+        {
+          "text": "Technopolis Tower Gurgaon",
+          "alias": "addressDest",
+          "meta": "@sys.street-address",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "22d8680e-44ca-4ed0-86d0-285d9ce0f3ee",
+      "data": [
+        {
+          "text": "hi"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "f5fe15d4-90b3-4263-80ac-c94068f0a66c",
+      "data": [
+        {
+          "text": "book a "
+        },
+        {
+          "text": "taxi",
+          "meta": "@sys.ignore",
+          "userDefined": true
+        },
+        {
+          "text": " from "
+        },
+        {
+          "text": "B-2/30 Safdarjung Enclave",
+          "alias": "addressLoc",
+          "meta": "@sys.street-address",
+          "userDefined": true
+        },
+        {
+          "text": " to "
+        },
+        {
+          "text": "Sector-52 Noida",
+          "alias": "addressLoc",
+          "meta": "@sys.street-address",
+          "userDefined": true
+        },
+        {
+          "text": " at "
+        },
+        {
+          "text": "5:20 PM",
+          "alias": "time",
+          "meta": "@sys.time",
+          "userDefined": true
+        },
+        {
+          "text": " for "
+        },
+        {
+          "text": "two",
+          "alias": "numOfRiders",
+          "meta": "@numOfRiders",
+          "userDefined": true
+        },
+        {
+          "text": " people"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "46f75ae8-0fc0-45e1-a17d-a0d16ef47d01",
+      "data": [
+        {
+          "text": "I want to book a "
+        },
+        {
+          "text": "taxi",
+          "meta": "@sys.ignore",
+          "userDefined": true
+        },
+        {
+          "text": " from "
+        },
+        {
+          "text": "B-2/30 Safdarjung Enclave",
+          "alias": "addressLoc",
+          "meta": "@sys.street-address",
+          "userDefined": true
+        },
+        {
+          "text": " to "
+        },
+        {
+          "text": "Sector-52 Noida",
+          "alias": "addressDest",
+          "meta": "@sys.street-address",
+          "userDefined": true
+        },
+        {
+          "text": " at "
+        },
+        {
+          "text": "5:20 PM",
+          "alias": "time",
+          "meta": "@sys.time",
+          "userDefined": true
+        },
+        {
+          "text": " for "
+        },
+        {
+          "text": "two",
+          "alias": "numOfRiders",
+          "meta": "@numOfRiders",
+          "userDefined": true
+        },
+        {
+          "text": " people"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "makeRide",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "required": true,
+          "dataType": "@sys.street-address",
+          "name": "addressLoc",
+          "value": "$addressLoc",
+          "prompts": [
+            "Hey, from where do you want to be picked up?"
+          ]
+        },
+        {
+          "required": true,
+          "dataType": "@sys.time",
+          "name": "time",
+          "value": "$time",
+          "prompts": [
+            "What time do you wanna get picked up?"
+          ]
+        },
+        {
+          "required": true,
+          "dataType": "@numOfRiders",
+          "name": "numOfRiders",
+          "value": "$numOfRiders",
+          "prompts": [
+            "How many people are going to ride?"
+          ]
+        },
+        {
+          "required": true,
+          "dataType": "@sys.street-address",
+          "name": "addressDest",
+          "value": "$addressDest",
+          "prompts": [
+            "Where to?"
+          ]
+        }
+      ],
+      "speech": "Great! I have booked a taxi from $addressLoc to $addressDest for $numOfRiders people. Your ride will be there by $time!"
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "fallbackIntent": false
+}

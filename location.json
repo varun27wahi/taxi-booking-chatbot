@@ -1,0 +1,15 @@
+{
+  "id": "a61fb8d5-8024-4cec-8511-8bc70d8029a7",
+  "name": "location",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "addressLoc",
+      "synonyms": [
+        "address"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": false
+}

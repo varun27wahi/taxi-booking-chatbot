@@ -1,0 +1,37 @@
+{
+  "id": "641d3323-06c2-4b5a-8e0a-5cfa21c5b145",
+  "name": "numOfRiders",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "one",
+      "synonyms": [
+        "one",
+        "1"
+      ]
+    },
+    {
+      "value": "two",
+      "synonyms": [
+        "two",
+        "2"
+      ]
+    },
+    {
+      "value": "three",
+      "synonyms": [
+        "three",
+        "3"
+      ]
+    },
+    {
+      "value": "four",
+      "synonyms": [
+        "four",
+        "4"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": false
+}
